@@ -1,0 +1,14 @@
+Raw base URL:
+https://github.com/Tim-Yu/cinsig-drews-pipeline-code/raw/refs/heads/payload-v1.0-hg38-r3/packages/cinsig-drews/v1.0-hg38-r3
+
+Bootstrap restore script URL:
+https://github.com/Tim-Yu/cinsig-drews-pipeline-code/raw/refs/heads/payload-v1.0-hg38-r3/packages/cinsig-drews/download_and_restore.sh
+
+Example on isolated HPC:
+wget https://github.com/Tim-Yu/cinsig-drews-pipeline-code/raw/refs/heads/payload-v1.0-hg38-r3/packages/cinsig-drews/download_and_restore.sh
+bash download_and_restore.sh \
+  --owner Tim-Yu \
+  --repo cinsig-drews-pipeline-code \
+  --branch payload-v1.0-hg38-r3 \
+  --package-path packages/cinsig-drews/v1.0-hg38-r3 \
+  --dest ./cinsig-drews

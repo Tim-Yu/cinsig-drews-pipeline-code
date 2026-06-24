@@ -1,0 +1,8 @@
+Restores a run-ready tree preserving the original full_raw layout:
+  scripts/
+  app/scripts/
+  app/third_party/
+  cinsig-drews-cpu.sif
+
+Raw base:
+  https://github.com/<owner>/<repo>/raw/refs/heads/<branch>/<repo-path>/v1.0-hg38-r3

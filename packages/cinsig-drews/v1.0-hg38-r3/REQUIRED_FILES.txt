@@ -1,0 +1,12 @@
+scripts/run_full_workflow.sh
+app/scripts/run_drews_pipeline.sh
+app/scripts/generate_cxs_and_activities.R
+app/scripts/run_interpretation_matrix.R
+app/third_party/drews_compendium/Section 5 Robustness analysis/Section 5.2 Signature stability across genomic technologies/input/Data_preparation/refgenome/hg19.chrom.sizes.txt
+app/third_party/drews_compendium/Section 5 Robustness analysis/Section 5.2 Signature stability across genomic technologies/input/Data_preparation/refgenome/gap_hg19.txt
+app/third_party/drews_compendium/Section 5 Robustness analysis/Section 5.2 Signature stability across genomic technologies/input/Data_preparation/refgenome/hg38.chrom.sizes.txt
+app/third_party/drews_compendium/Section 5 Robustness analysis/Section 5.2 Signature stability across genomic technologies/input/Data_preparation/refgenome/gap_hg38.txt
+README.md
+CINSig_Drews.singularity.def
+build_offline_caches.sh
+cinsig-drews-cpu.sif
