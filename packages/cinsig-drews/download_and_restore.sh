@@ -17,6 +17,7 @@ BRANCH="main"
 PACKAGE_PATH="packages/cinsig-drews/v1.0-hg38"
 DEST_DIR="./cinsig-drews"
 WORK_DIR=""
+CALLER_PWD="$(pwd)"
 
 usage() {
     cat <<EOF
@@ -52,6 +53,11 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
+
+# Resolve destination path before changing directories.
+if [[ "$DEST_DIR" != /* ]]; then
+    DEST_DIR="$CALLER_PWD/$DEST_DIR"
+fi
 
 for cmd in wget sha256sum tar cat sort awk; do
     if ! command -v "$cmd" >/dev/null 2>&1; then
