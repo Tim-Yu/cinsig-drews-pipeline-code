@@ -1,0 +1,10 @@
+This payload is meant to be committed to a GitHub repo and fetched with raw URLs.
+
+Expected raw base:
+  https://github.com/<owner>/<repo>/raw/refs/heads/<branch>/<repo-path>/v1.0-hg38
+
+Restore command example:
+  bash download_and_restore.sh \
+    --owner <owner> --repo <repo> --branch main \
+    --package-path <repo-path>/v1.0-hg38 \
+    --dest ./cinsig-drews
